@@ -1,0 +1,283 @@
+# Reading C:/Program Files (x86)/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do topo_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\Program Files (x86)\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\Program Files (x86)\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/giuli/Documents/Escola/16.1/Sistemas Digitais/Lab/PLab3/PLab3_II/topo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity topo
+# -- Compiling architecture ports of topo
+# vcom -93 -work work {C:/Users/giuli/Documents/Escola/16.1/Sistemas Digitais/Lab/PLab3/PLab3_II/ramlpm.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ramlpm
+# -- Compiling architecture SYN of ramlpm
+# vcom -93 -work work {C:/Users/giuli/Documents/Escola/16.1/Sistemas Digitais/Lab/PLab3/PLab3_II/decod7seghex7.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decod7seghex7
+# -- Compiling architecture decod_bhv of decod7seghex7
+# vcom -93 -work work {C:/Users/giuli/Documents/Escola/16.1/Sistemas Digitais/Lab/PLab3/PLab3_II/decod7seg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decod7seg
+# -- Compiling architecture decod_bhv of decod7seg
+# vcom -93 -work work {C:/Users/giuli/Documents/Escola/16.1/Sistemas Digitais/Lab/PLab3/PLab3_II/mux.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux
+# -- Compiling architecture arch of mux
+# 
+vsim work.topo
+# vsim work.topo 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.topo(ports)
+# Loading work.ramlpm(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading work.decod7seghex7(decod_bhv)
+# Loading work.decod7seg(decod_bhv)
+# Loading work.mux(arch)
+add wave -position end  sim:/topo/SW
+add wave -position end  sim:/topo/HEX0
+add wave -position end  sim:/topo/HEX1
+add wave -position end  sim:/topo/HEX4
+add wave -position end  sim:/topo/HEX5
+add wave -position end  sim:/topo/HEX6
+add wave -position end  sim:/topo/HEX7
+add wave -position end  sim:/topo/LEDG(0)
+add wave -position end  sim:/topo/KEY(0)
+force -freeze sim:/topo/SW 110000011100000000 0
+run
+force -freeze sim:/topo/KEY(0) 1 0, 0 {50 ps} -r 100
+run
+run
+force -freeze sim:/topo/SW 110000111100000001 0
+run
+run
+force -freeze sim:/topo/SW 11000101110000010 0
+# Value length (17) does not equal array index length (18).
+# 
+# ** Error: (vsim-4011) Invalid force value: 11000101110000010 0.
+
+# 
+force -freeze sim:/topo/SW 110001011100000010 0
+run
+force -freeze sim:/topo/SW 110001111100000011 0
+run
+force -freeze sim:/topo/SW 110010011100000100 0
+run
+force -freeze sim:/topo/SW 110010111100000101 0
+run
+force -freeze sim:/topo/SW 110011011100000110 0
+run
+force -freeze sim:/topo/SW 110011111100000111 0
+run
+force -freeze sim:/topo/SW 110100011100001000 0
+run
+force -freeze sim:/topo/SW 110100111100001001 0
+run
+force -freeze sim:/topo/SW 110101011100001010 0
+run
+force -freeze sim:/topo/SW 110101111100001011 0
+run
+force -freeze sim:/topo/SW 110110011100001100 0
+run
+force -freeze sim:/topo/SW 110110111100001101 0
+run
+force -freeze sim:/topo/SW 110111011100001110 0
+run
+force -freeze sim:/topo/SW 110111111100001111 0
+run
+force -freeze sim:/topo/SW 111000011100010000 0
+run
+force -freeze sim:/topo/SW 111000111100010001 0
+run
+force -freeze sim:/topo/SW 111001011100010010 0
+run
+force -freeze sim:/topo/SW 111001111100010011 0
+run
+force -freeze sim:/topo/SW 111010011100010100 0
+run
+force -freeze sim:/topo/SW 111010111100010101 0
+run
+force -freeze sim:/topo/SW 111011011100010110 0
+run
+force -freeze sim:/topo/SW 111011111100010111 0
+run
+force -freeze sim:/topo/SW 111100011100011000 0
+run
+force -freeze sim:/topo/SW 111100111100011001 0
+force -freeze sim:/topo/SW 111101011100011010 0
+force -freeze sim:/topo/SW 111100111100011001 0
+run
+force -freeze sim:/topo/SW 111101011100011010 0
+run
+force -freeze sim:/topo/SW 111101111100011011 0
+run
+force -freeze sim:/topo/SW 111110011100011100 0
+run
+force -freeze sim:/topo/SW 111110111100011101 0
+run
+force -freeze sim:/topo/SW 111111011100011110 0
+run
+force -freeze sim:/topo/SW 111111111100011111 0
+run
+force -freeze sim:/topo/SW 010000011100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 010000111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 010001011100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 010001111100011111 0
+run
+run
+force -freeze sim:/topo/SW 010010011100011111 0
+run
+run
+run
+run
+force -freeze sim:/topo/SW 010010111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 010011011100011111 0
+run
+run
+run
+run
+force -freeze sim:/topo/SW 010011111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 010100011100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 010100111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 010101011100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 010101111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 010110011100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 010110111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 010111011100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 010111111100011111 0
+force -freeze sim:/topo/SW 010111111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011000011100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011000111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011001011100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011001111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011010011100011111 0
+run
+run
+
+run
+force -freeze sim:/topo/SW 011010111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011011011100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011011111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011100011100011111 0
+force -freeze sim:/topo/SW 011100011100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011100111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011101011100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011101111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011110011100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011110111100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011111011100011111 0
+run
+run
+run
+force -freeze sim:/topo/SW 011111111100011111 0
+run
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/giuli/Documents/Escola/16.1/Sistemas Digitais/Lab/PLab3/PLab3_II/wave.do}
